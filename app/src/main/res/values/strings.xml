@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DNATranslator</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">RNA to Aminoacids</string>
+    <string name="title_notifications">Aminoacids to RNA</string>
+</resources>

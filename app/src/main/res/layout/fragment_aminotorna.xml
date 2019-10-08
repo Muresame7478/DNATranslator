@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewB"
+            android:layout_width="223dp"
+            android:layout_height="49dp"
+            android:text="Please enter the aminoacids you would like to translate below."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <EditText
+            android:id="@+id/textInputAmino"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:contentDescription="Your aminoacids here."
+            android:ems="10"
+            android:hint="Enter your aminoacids here."
+            android:inputType="text"
+            android:isScrollContainer="true"
+            android:minLines="2"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbarStyle="insideInset"
+            android:scrollHorizontally="true"
+            app:layout_constraintBottom_toTopOf="@+id/translateAminoRNA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB" />
+
+        <EditText
+            android:id="@+id/textOutputRNA"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="true"
+            android:freezesText="true"
+            android:hint="Your translated sequence will appear here."
+            android:inputType="text|textCapCharacters"
+            android:isScrollContainer="true"
+            android:linksClickable="false"
+            android:longClickable="true"
+            android:saveEnabled="false"
+            android:selectAllOnFocus="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translateAminoRNA" />
+
+        <Button
+            android:id="@+id/translateAminoRNA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="aminoToRNA"
+            android:text="Translate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
