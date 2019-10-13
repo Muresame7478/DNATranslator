@@ -1,3 +1,5 @@
+// Created by Gabriel Herbert for biology class at IES Cervantes.
+
 package com.gmail.lynx7478.dnatranslator;
 
 import android.os.Bundle;
